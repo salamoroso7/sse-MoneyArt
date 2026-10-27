@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_webapp
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      # 1. Esegue per primo ddl_moneyart.sql
+      - ./src/main/java/it/unisa/c02/moneyart/model/db/ddl_moneyart.sql:/docker-entrypoint-initdb.d/01_ddl_moneyart.sql
+      # 2. Esegue per secondo ddl_timer.sql
+      - ./src/main/java/it/unisa/c02/moneyart/model/db/ddl_timer.sql:/docker-entrypoint-initdb.d/02_ddl_timer.sql
+    command: --default-authentication-plugin=mysql_native_password
+
+volumes:
+  mysql_data:
