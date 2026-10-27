@@ -50,7 +50,7 @@ public class ContractProducer {
 
   private static final BigInteger GAS_LIMIT = BigInteger.valueOf(6721975L);
   private static final BigInteger GAS_PRICE = BigInteger.valueOf(20000000000L);
-  private static final String CONTRACT_ADDRESS = System.getenv("GANAHCE_CONTRACT_ADDRESS");
+  private static final String CONTRACT_ADDRESS = System.getenv("GANACHE_CONTRACT_ADDRESS");
 
   private static final Web3j web3j = Web3j.build(new HttpService("HTTP://127.0.0.1:7545"));
 }
