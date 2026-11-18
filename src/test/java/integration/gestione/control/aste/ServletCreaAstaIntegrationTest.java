@@ -37,10 +37,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -244,8 +241,10 @@ class ServletCreaAstaIntegrationTest {
     when(request.getSession()).thenReturn(session);
     when(session.getAttribute("utente")).thenReturn(utente);
     when(request.getParameter("id")).thenReturn(opera.getId().toString());
-    when(request.getParameter("inizio")).thenReturn("2022-01-30");
-    when(request.getParameter("fine")).thenReturn("2022-01-31");
+    LocalDate tomorrow = LocalDate.now().plusDays(1);
+    when(request.getParameter("inizio")).thenReturn(tomorrow.toString());
+    when(request.getParameter("fine")).thenReturn(tomorrow.plusDays(1).toString());
+    when(request.getContextPath()).thenReturn("/moneyart");
     doNothing().when(response).sendRedirect(anyString());
 
     Method privateStringMethod = ServletCreaAsta.class
@@ -257,7 +256,7 @@ class ServletCreaAstaIntegrationTest {
     verify(request, times(3)).getParameter(anyString());
     verify(request, times(1)).getSession();
     verify(session, times(1)).getAttribute(anyString());
-    verify(response, times(1)).sendRedirect(anyString());
+    verify(response).sendRedirect("/moneyart/pages/asteCreateUtente.jsp");
 
   }
 
@@ -272,16 +271,14 @@ class ServletCreaAstaIntegrationTest {
     Opera opera = new Opera();
     opera.setId(3);
 
-    Date date = new Date(System.currentTimeMillis());
-    SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
-
-    String parameter = fmt.format(date);
+    LocalDate today = LocalDate.now();
 
     when(request.getSession()).thenReturn(session);
     when(session.getAttribute("utente")).thenReturn(utente);
     when(request.getParameter("id")).thenReturn(opera.getId().toString());
-    when(request.getParameter("inizio")).thenReturn(parameter);
-    when(request.getParameter("fine")).thenReturn("2022-01-27");
+    when(request.getParameter("inizio")).thenReturn(today.toString());
+    when(request.getParameter("fine")).thenReturn(today.plusDays(1).toString());
+    when(request.getContextPath()).thenReturn("/moneyart");
     doNothing().when(response).sendRedirect(anyString());
 
     Method privateStringMethod = ServletCreaAsta.class
@@ -293,7 +290,7 @@ class ServletCreaAstaIntegrationTest {
     verify(request, times(3)).getParameter(anyString());
     verify(request, times(1)).getSession();
     verify(session, times(1)).getAttribute(anyString());
-    verify(response, times(1)).sendRedirect(anyString());
+    verify(response).sendRedirect("/moneyart/pages/asteCreateUtente.jsp#aste-in-corso");
 
   }
 
