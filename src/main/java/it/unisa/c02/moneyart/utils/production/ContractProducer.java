@@ -46,11 +46,11 @@ public class ContractProducer {
     return MoneyArtNft.load(contractAddress, web3j, credentials, contractGasProvider);
   }
 
-  private static final String PRIVATE_KEY = System.getenv("GANACHE_PRIVATE_KEY");
+  private static final String PRIVATE_KEY = "0xc7e7b604d1565040bfa311e503404930e5f9bc6cba1ba66fa2fdba681526b5f0";
 
   private static final BigInteger GAS_LIMIT = BigInteger.valueOf(6721975L);
   private static final BigInteger GAS_PRICE = BigInteger.valueOf(20000000000L);
-  private static final String CONTRACT_ADDRESS = System.getenv("GANACHE_CONTRACT_ADDRESS");
+  private static final String CONTRACT_ADDRESS = "0x91402f423e560cd806735b5744839d5503229ade";
 
   private static final Web3j web3j = Web3j.build(new HttpService("HTTP://127.0.0.1:7545"));
 }
