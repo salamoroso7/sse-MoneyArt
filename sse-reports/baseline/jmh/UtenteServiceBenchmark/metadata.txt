@@ -1,0 +1,4 @@
+﻿Date: 2026-11-24 17:09:35
+Benchmark: UtenteServiceBenchmark
+JVM: java version "21.0.12.1" 2026-08-18 LTS
+CPU: AMD Ryzen 3 3250U with Radeon Graphics          (4 logical processors)

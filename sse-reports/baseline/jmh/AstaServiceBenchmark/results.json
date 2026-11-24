@@ -1,0 +1,868 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByArtistFollowers",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "10",
+            "sortOrder" : "ASC"
+        },
+        "primaryMetric" : {
+            "score" : 245.45844894478827,
+            "scoreError" : 17.323519858688613,
+            "scoreConfidence" : [
+                228.13492908609965,
+                262.7819688034769
+            ],
+            "scorePercentiles" : {
+                "0.0" : 229.37377262819624,
+                "50.0" : 239.27026997320579,
+                "90.0" : 270.4363900849783,
+                "95.0" : 316.3901148114209,
+                "99.0" : 318.760059700887,
+                "99.9" : 318.760059700887,
+                "99.99" : 318.760059700887,
+                "99.999" : 318.760059700887,
+                "99.9999" : 318.760059700887,
+                "100.0" : 318.760059700887
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    240.2709715968753,
+                    237.35925606338793,
+                    229.37377262819624,
+                    234.39861130144808,
+                    239.65596287245967,
+                    235.83497596529466,
+                    234.69437703500057,
+                    237.76887212530778,
+                    239.00774269354542,
+                    235.2717383115611
+                ],
+                [
+                    239.53279725286615,
+                    234.49747641181685,
+                    233.51056836020348,
+                    243.4835191218936,
+                    245.9104907024325,
+                    271.36116191156634,
+                    262.11344364568583,
+                    246.90084196044046,
+                    249.4623392348966,
+                    318.760059700887
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByArtistFollowers",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "10",
+            "sortOrder" : "DESC"
+        },
+        "primaryMetric" : {
+            "score" : 278.3252220105335,
+            "scoreError" : 6.245203474322305,
+            "scoreConfidence" : [
+                272.0800185362112,
+                284.5704254848558
+            ],
+            "scorePercentiles" : {
+                "0.0" : 266.40417743829255,
+                "50.0" : 278.96543911393644,
+                "90.0" : 288.1240499712837,
+                "95.0" : 295.7143667562927,
+                "99.0" : 296.104642650297,
+                "99.9" : 296.104642650297,
+                "99.99" : 296.104642650297,
+                "99.999" : 296.104642650297,
+                "99.9999" : 296.104642650297,
+                "100.0" : 296.104642650297
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    296.104642650297,
+                    279.4769592934485,
+                    272.8565837301215,
+                    279.8707316754799,
+                    278.8521283984748,
+                    279.07874982939813,
+                    288.2991247702107,
+                    266.40417743829255,
+                    273.0324476129908,
+                    271.1270149127356
+                ],
+                [
+                    273.40654586598777,
+                    275.5556098740083,
+                    286.5483767809405,
+                    280.40027902587144,
+                    277.6331605260549,
+                    284.34721902867545,
+                    279.8291171622629,
+                    283.6184141171315,
+                    271.1256949960286,
+                    268.937462522257
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByArtistFollowers",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "100",
+            "sortOrder" : "ASC"
+        },
+        "primaryMetric" : {
+            "score" : 2451.0084064157227,
+            "scoreError" : 1375.7735691153496,
+            "scoreConfidence" : [
+                1075.234837300373,
+                3826.781975531072
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1967.8265895401546,
+                "50.0" : 2054.731079393913,
+                "90.0" : 2700.9508907496493,
+                "95.0" : 8823.900170117598,
+                "99.0" : 9143.395427603726,
+                "99.9" : 9143.395427603726,
+                "99.99" : 9143.395427603726,
+                "99.999" : 9143.395427603726,
+                "99.9999" : 9143.395427603726,
+                "100.0" : 9143.395427603726
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    1996.42455708398,
+                    2217.0957365608983,
+                    9143.395427603726,
+                    2753.4902778812484,
+                    2228.0964065652433,
+                    2140.621396674983,
+                    2067.5270645753935,
+                    2017.1959413001198,
+                    1988.515914709518,
+                    1975.8062648928678
+                ],
+                [
+                    1967.8265895401546,
+                    2056.317418056734,
+                    2016.2755222937483,
+                    2053.144740731093,
+                    2029.0488929477222,
+                    2052.229785354296,
+                    2064.2752540121082,
+                    2099.5992076288753,
+                    2120.4922108054357,
+                    2032.7895190963097
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByArtistFollowers",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "100",
+            "sortOrder" : "DESC"
+        },
+        "primaryMetric" : {
+            "score" : 2600.9505878528907,
+            "scoreError" : 702.4075296596471,
+            "scoreConfidence" : [
+                1898.5430581932437,
+                3303.358117512538
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2207.6811852235514,
+                "50.0" : 2381.6869032033906,
+                "90.0" : 3076.3008631329885,
+                "95.0" : 5801.5335024129345,
+                "99.0" : 5942.038080935998,
+                "99.9" : 5942.038080935998,
+                "99.99" : 5942.038080935998,
+                "99.999" : 5942.038080935998,
+                "99.9999" : 5942.038080935998,
+                "100.0" : 5942.038080935998
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2489.1760806249163,
+                    2467.703893237614,
+                    2450.363758196525,
+                    2343.6538273620317,
+                    2334.860987974266,
+                    2483.9920912768234,
+                    2473.3974127339743,
+                    5942.038080935998,
+                    3131.9465104747737,
+                    2575.490037056908
+                ],
+                [
+                    2301.671524230948,
+                    2384.9339301190803,
+                    2344.1845253464153,
+                    2330.800428353346,
+                    2207.6811852235514,
+                    2276.397929857525,
+                    2299.6220006882972,
+                    2325.9186295503214,
+                    2378.439876287701,
+                    2476.739047526802
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByArtistFollowers",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "500",
+            "sortOrder" : "ASC"
+        },
+        "primaryMetric" : {
+            "score" : 10769.306574369455,
+            "scoreError" : 1652.0546072624343,
+            "scoreConfidence" : [
+                9117.25196710702,
+                12421.36118163189
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9515.385509402386,
+                "50.0" : 10516.19719935623,
+                "90.0" : 10931.034577479295,
+                "95.0" : 18239.6655234625,
+                "99.0" : 18624.07148337019,
+                "99.9" : 18624.07148337019,
+                "99.99" : 18624.07148337019,
+                "99.999" : 18624.07148337019,
+                "99.9999" : 18624.07148337019,
+                "100.0" : 18624.07148337019
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    10935.95228521646,
+                    10769.805074421314,
+                    10533.061612836866,
+                    10652.107249772225,
+                    10713.130169098667,
+                    10411.920479358148,
+                    10856.063750532141,
+                    10886.775207844808,
+                    10715.10727599781,
+                    10499.332785875591
+                ],
+                [
+                    18624.07148337019,
+                    10272.772010765091,
+                    9710.206601757302,
+                    9515.385509402386,
+                    9741.679013525785,
+                    10070.226988907662,
+                    9585.591107175316,
+                    10260.135657464902,
+                    10626.717081156934,
+                    10006.09014290949
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByArtistFollowers",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "500",
+            "sortOrder" : "DESC"
+        },
+        "primaryMetric" : {
+            "score" : 13349.903804024429,
+            "scoreError" : 3673.4197601392534,
+            "scoreConfidence" : [
+                9676.484043885175,
+                17023.323564163682
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10973.63633924499,
+                "50.0" : 11935.407374853741,
+                "90.0" : 22355.85174942114,
+                "95.0" : 26573.251044385237,
+                "99.0" : 26770.41234720718,
+                "99.9" : 26770.41234720718,
+                "99.99" : 26770.41234720718,
+                "99.999" : 26770.41234720718,
+                "99.9999" : 26770.41234720718,
+                "100.0" : 26770.41234720718
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    11711.44875117478,
+                    11488.458817870582,
+                    11348.920843299771,
+                    10973.63633924499,
+                    11396.932720434601,
+                    11214.884076990376,
+                    11946.71958907308,
+                    11430.770088352518,
+                    11683.118285681805,
+                    11559.37739002351
+                ],
+                [
+                    12491.741750882748,
+                    26770.41234720718,
+                    22827.18629076838,
+                    18113.84087729591,
+                    12105.00843619572,
+                    12052.843105432441,
+                    11982.172995780591,
+                    12025.565810358004,
+                    11924.095160634404,
+                    11950.942403787149
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByPrice",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "10",
+            "sortOrder" : "ASC"
+        },
+        "primaryMetric" : {
+            "score" : 314.19581071222825,
+            "scoreError" : 75.73743459158727,
+            "scoreConfidence" : [
+                238.458376120641,
+                389.9332453038155
+            ],
+            "scorePercentiles" : {
+                "0.0" : 259.63132019993367,
+                "50.0" : 281.8653922459124,
+                "90.0" : 413.09726346023655,
+                "95.0" : 636.301109866014,
+                "99.0" : 647.6935007968527,
+                "99.9" : 647.6935007968527,
+                "99.99" : 647.6935007968527,
+                "99.999" : 647.6935007968527,
+                "99.9999" : 647.6935007968527,
+                "100.0" : 647.6935007968527
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    281.2843838347951,
+                    283.65168842207856,
+                    276.6227048171441,
+                    282.44640065702976,
+                    275.8694171575606,
+                    278.46347503828235,
+                    274.2843715143052,
+                    283.59731988376734,
+                    280.08092381122464,
+                    271.0613031110416
+                ],
+                [
+                    264.73070232708614,
+                    259.63132019993367,
+                    341.2672868196273,
+                    352.3614949816244,
+                    313.3268282622765,
+                    313.2773160830897,
+                    647.6935007968527,
+                    419.8456821800822,
+                    312.6717315920457,
+                    271.74836275471824
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByPrice",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "10",
+            "sortOrder" : "DESC"
+        },
+        "primaryMetric" : {
+            "score" : 324.60774029047036,
+            "scoreError" : 21.223927856919598,
+            "scoreConfidence" : [
+                303.38381243355076,
+                345.83166814738996
+            ],
+            "scorePercentiles" : {
+                "0.0" : 293.1053628139926,
+                "50.0" : 329.8941514463211,
+                "90.0" : 356.63991393713695,
+                "95.0" : 361.5713282563016,
+                "99.0" : 361.82858090185675,
+                "99.9" : 361.82858090185675,
+                "99.99" : 361.82858090185675,
+                "99.999" : 361.82858090185675,
+                "99.9999" : 361.82858090185675,
+                "100.0" : 361.82858090185675
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    350.89296471462814,
+                    338.54838151688824,
+                    361.82858090185675,
+                    340.53676167711916,
+                    356.2473874545786,
+                    356.68352799075456,
+                    346.1467837991012,
+                    339.2182683165157,
+                    343.1585413581597,
+                    332.36716965650027
+                ],
+                [
+                    298.865400002633,
+                    294.9452485495086,
+                    302.6987918923509,
+                    327.4211332361418,
+                    293.1053628139926,
+                    309.5865940284132,
+                    300.43994385255064,
+                    295.18062876083854,
+                    303.9230939141625,
+                    300.36024137271386
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByPrice",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "100",
+            "sortOrder" : "ASC"
+        },
+        "primaryMetric" : {
+            "score" : 2334.75246506991,
+            "scoreError" : 139.55337519589133,
+            "scoreConfidence" : [
+                2195.1990898740187,
+                2474.3058402658016
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2154.1113582928297,
+                "50.0" : 2288.5016781230497,
+                "90.0" : 2633.2820868682697,
+                "95.0" : 2742.179112611207,
+                "99.0" : 2747.7173241668233,
+                "99.9" : 2747.7173241668233,
+                "99.99" : 2747.7173241668233,
+                "99.999" : 2747.7173241668233,
+                "99.9999" : 2747.7173241668233,
+                "100.0" : 2747.7173241668233
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    2154.1113582928297,
+                    2212.7726127851247,
+                    2241.2849165072807,
+                    2168.588561862988,
+                    2255.5080853136174,
+                    2289.5147167778,
+                    2266.647350209231,
+                    2287.4886394682994,
+                    2204.141363432711,
+                    2207.56627442933
+                ],
+                [
+                    2319.0412186379926,
+                    2636.9530930545006,
+                    2273.5598284901803,
+                    2297.232330163158,
+                    2316.931385006353,
+                    2355.4017844335426,
+                    2400.751694681892,
+                    2459.5937324923643,
+                    2600.2430311921926,
+                    2747.7173241668233
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByPrice",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "100",
+            "sortOrder" : "DESC"
+        },
+        "primaryMetric" : {
+            "score" : 3105.40906601733,
+            "scoreError" : 503.1994543269589,
+            "scoreConfidence" : [
+                2602.2096116903713,
+                3608.608520344289
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2514.0983748860685,
+                "50.0" : 2831.9400587137543,
+                "90.0" : 4120.387675396328,
+                "95.0" : 4229.7713952337945,
+                "99.0" : 4234.311848762973,
+                "99.9" : 4234.311848762973,
+                "99.99" : 4234.311848762973,
+                "99.999" : 4234.311848762973,
+                "99.9999" : 4234.311848762973,
+                "100.0" : 4234.311848762973
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    4234.311848762973,
+                    4143.502778179414,
+                    3829.322969894147,
+                    3912.351750348542,
+                    3782.9263093505842,
+                    3185.790772382327,
+                    2971.872216787607,
+                    3640.829820279565,
+                    2693.433904068963,
+                    2823.1810537727065
+                ],
+                [
+                    2564.4281336309637,
+                    2662.9015291967444,
+                    2514.0983748860685,
+                    2643.308999264117,
+                    2747.4014276232915,
+                    2675.9346671143326,
+                    2841.8617661044445,
+                    2840.6990636548026,
+                    2723.6693454266565,
+                    2676.3545896183546
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByPrice",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "500",
+            "sortOrder" : "ASC"
+        },
+        "primaryMetric" : {
+            "score" : 12908.524668944781,
+            "scoreError" : 4577.438515051192,
+            "scoreConfidence" : [
+                8331.08615389359,
+                17485.963183995973
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10782.280817402769,
+                "50.0" : 11249.4059824588,
+                "90.0" : 16246.73471441055,
+                "95.0" : 33629.39615164325,
+                "99.0" : 34532.400916689134,
+                "99.9" : 34532.400916689134,
+                "99.99" : 34532.400916689134,
+                "99.999" : 34532.400916689134,
+                "99.9999" : 34532.400916689134,
+                "100.0" : 34532.400916689134
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    11278.747763864043,
+                    11030.25257857549,
+                    11220.064201053556,
+                    12117.175968463796,
+                    34532.400916689134,
+                    16472.305615771606,
+                    14216.596602160998,
+                    12456.407123438312,
+                    12607.240125700906,
+                    11502.975602876886
+                ],
+                [
+                    10987.020751782937,
+                    10988.397597468762,
+                    11312.161936560935,
+                    10823.480156303995,
+                    11428.44387399202,
+                    11055.29351379096,
+                    11185.194847546063,
+                    10782.280817402769,
+                    11071.50647948164,
+                    11102.546905970838
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "it.unisa.c02.moneyart.bench.AstaServiceBenchmark.baseline_getAuctionsSortedByPrice",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 2,
+        "jvm" : "C:\\Program Files\\Java\\jdk-21.0.12.1\\bin\\java.exe",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "21.0.12.1",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.12.1+1-LTS-4",
+        "warmupIterations" : 5,
+        "warmupTime" : "300 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "400 ms",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "auctionCount" : "500",
+            "sortOrder" : "DESC"
+        },
+        "primaryMetric" : {
+            "score" : 15464.93121522784,
+            "scoreError" : 9085.166196005866,
+            "scoreConfidence" : [
+                6379.7650192219735,
+                24550.097411233706
+            ],
+            "scorePercentiles" : {
+                "0.0" : 12054.479340781796,
+                "50.0" : 12591.283876202546,
+                "90.0" : 19577.09146395614,
+                "95.0" : 57245.75512174742,
+                "99.0" : 59208.29977628635,
+                "99.9" : 59208.29977628635,
+                "99.99" : 59208.29977628635,
+                "99.999" : 59208.29977628635,
+                "99.9999" : 59208.29977628635,
+                "100.0" : 59208.29977628635
+            },
+            "scoreUnit" : "ns/op",
+            "rawData" : [
+                [
+                    12513.154603958887,
+                    12685.58491502295,
+                    12154.961809635723,
+                    12406.137195121952,
+                    12776.928584770561,
+                    12669.413148446205,
+                    16154.254469987229,
+                    14490.17086489343,
+                    19957.406685508235,
+                    59208.29977628635
+                ],
+                [
+                    12794.745198144632,
+                    12359.678489564483,
+                    12054.479340781796,
+                    12167.887475042466,
+                    12310.17653792854,
+                    12230.547524394651,
+                    12273.051676811076,
+                    12692.297714638666,
+                    12892.449024613154,
+                    12506.999269005848
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
