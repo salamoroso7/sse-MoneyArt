@@ -1,0 +1,18 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1795611270349,1983,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1923,0,17
+1795611272336,1910,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1865,0,0
+1795611274246,1880,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1812,0,0
+1795611276126,1837,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1797,0,0
+1795611277964,1858,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1808,0,0
+1795611279822,1802,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1759,0,0
+1795611281626,1834,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1807,0,0
+1795611283461,1843,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1812,0,0
+1795611285305,1868,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1833,0,0
+1795611287173,1681,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1640,0,0
+1795611288855,1741,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1702,0,0
+1795611290596,1820,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1791,0,0
+1795611292416,1755,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1718,0,0
+1795611294171,1786,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1749,0,0
+1795611295957,1800,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1770,0,0
+1795611297758,1771,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1735,0,0
+1795611299530,1766,GET aste attive,200,,Richieste elenco aste 1-1,text,true,,13315316,198,1,1,http://localhost:8080/MoneyArt-1.0-SNAPSHOT/getAuctions?action=inCorso,1734,0,0
