@@ -1,0 +1,21 @@
+<Context>
+    <Resource name="jdbc/storage"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="CHANGE_ME"
+              password="CHANGE_ME"
+              url="jdbc:mysql://localhost:3307/moneyart?useUnicode=yes&amp;characterEncoding=UTF-8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+    <Resource name="jdbc/timer"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="CHANGE_ME"
+              password="CHANGE_ME"
+              url="jdbc:mysql://localhost:3307/timerservice?useUnicode=yes&amp;characterEncoding=UTF-8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+
+    <Resource name="BeanManager"
+              auth="Container"
+              type="javax.enterprise.inject.spi.BeanManager"
+              factory="org.jboss.weld.resources.ManagerObjectFactory" />
+</Context>
