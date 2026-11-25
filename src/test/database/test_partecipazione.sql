@@ -39,10 +39,10 @@ VALUES ((SELECT id FROM utente WHERE username = "XJustUnluckyX"), (SELECT id FRO
 /****************************** ASTE ******************************/
 
 INSERT INTO asta(id_opera, data_inizio, data_fine, stato)
-VALUES((SELECT id FROM opera WHERE nome = "The Shibosis" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan")), CURRENT_DATE() - 8, CURRENT_DATE() - 1, "TERMINATA"),
-      ((SELECT id FROM opera WHERE nome = "Bears Deluxe #3742" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan")), CURRENT_DATE() - 1, CURRENT_DATE + 6, "IN_CORSO"),
-      ((SELECT id FROM opera WHERE nome = "Bears Deluxe #3742" AND id_artista = (SELECT id FROM utente WHERE username = "MarioPeluso")), CURRENT_DATE(), CURRENT_DATE() + 7, "IN_CORSO"),
-      ((SELECT id FROM opera WHERE nome = "Kumo Resident" AND id_artista = (SELECT id FROM utente WHERE username = "AurySepe")), CURRENT_DATE(), CURRENT_DATE() + 7, "IN_CORSO");
+VALUES((SELECT id FROM opera WHERE nome = "The Shibosis" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan")), CURRENT_DATE() - INTERVAL 8 DAY, CURRENT_DATE() - INTERVAL 1 DAY, "TERMINATA"),
+      ((SELECT id FROM opera WHERE nome = "Bears Deluxe #3742" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan")), CURRENT_DATE() - INTERVAL 1 DAY, CURRENT_DATE() + INTERVAL 6 DAY, "IN_CORSO"),
+      ((SELECT id FROM opera WHERE nome = "Bears Deluxe #3742" AND id_artista = (SELECT id FROM utente WHERE username = "MarioPeluso")), CURRENT_DATE(), CURRENT_DATE() + INTERVAL 7 DAY, "IN_CORSO"),
+      ((SELECT id FROM opera WHERE nome = "Kumo Resident" AND id_artista = (SELECT id FROM utente WHERE username = "AurySepe")), CURRENT_DATE(), CURRENT_DATE() + INTERVAL 7 DAY, "IN_CORSO");
 
 
 
