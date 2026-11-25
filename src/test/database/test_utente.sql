@@ -26,7 +26,7 @@ INSERT INTO opera(id_utente, id_artista, nome, descrizione, immagine, certificat
 VALUES ((SELECT id FROM utente WHERE username = "DG266"), (SELECT id FROM utente WHERE username = "alfcan"), "The Shibosis", "Descrizione", 0x717171, NULL, "IN_POSSESSO");
 
 INSERT INTO asta(id_opera, data_inizio, data_fine, stato)
-VALUES((SELECT id FROM opera WHERE nome = "The Shibosis" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan")), CURRENT_DATE() - 8, CURRENT_DATE() - 1, "TERMINATA");
+VALUES((SELECT id FROM opera WHERE nome = "The Shibosis" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan")), CURRENT_DATE() - INTERVAL 8 DAY, CURRENT_DATE() - INTERVAL 1 DAY, "TERMINATA");
 
 INSERT INTO partecipazione(id_utente, id_asta, offerta)
 VALUES((SELECT id FROM utente WHERE username = "shoyll"), (SELECT id FROM asta WHERE id_opera = (SELECT id FROM opera WHERE nome = "The Shibosis" AND id_artista = (SELECT id FROM utente WHERE username = "alfcan"))), 1000),
