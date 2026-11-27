@@ -1,0 +1,32 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: "${ENERGIBRIDGE_MYSQL_ROOT_PASSWORD:?Set it in energibridge/database/.env}"
+      MYSQL_DATABASE: moneyart
+    ports:
+      - "${ENERGIBRIDGE_MYSQL_PORT:-3307}:3306"
+    volumes:
+      - energibridge_mysql_data:/var/lib/mysql
+      - type: bind
+        source: ..\..\src\main\java\it\unisa\c02\moneyart\model\db\ddl_moneyart.sql
+        target: /docker-entrypoint-initdb.d/01_ddl_moneyart.sql
+        read_only: true
+      - type: bind
+        source: ..\..\src\main\java\it\unisa\c02\moneyart\model\db\ddl_timer.sql
+        target: /docker-entrypoint-initdb.d/02_ddl_timer.sql
+        read_only: true
+      - type: bind
+        source: seed.sql
+        target: /docker-entrypoint-initdb.d/03_seed.sql
+        read_only: true
+      - type: bind
+        source: ..\..\src\main\webapp\static\demo
+        target: /benchmark-assets
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --secure-file-priv=/benchmark-assets
+
+volumes:
+  energibridge_mysql_data:
